@@ -13,135 +13,115 @@ function draw() {
     var box5 = "T";
     var box6 = "E";
     var box7 = "P";
+    var round = 60;
+    var textheight = 100;
+    var boxtext = textFont ("Chalkboard");
+    
+    var dogcolor = color ("tan");
     var dogear = "p";
     var dogear2 = "q";
     var doghand = "U";
     var dogfeet = "n";
+    var dot = 405;
     var dogtail = "0";
+    var dogx = 270;
+    var dogeyey = 195;
+    var dogeary = 110;
+    var doghandy = 250;
+    var dogfeety = 300;
+    
+    
     var catmouth = "w";
     var cattail = "S";
     var catwhisker = "=";
     var cathand = "V";
+    var cathandy = 255;
     var catfeet = "U";
+    var catfeety = 300;
     var catear = "^";
-
-
-    // BUNNY //
-    //FOOT//
-    fill("pink")
-    stroke("black")
-    strokeWeight(1);
-    ellipse(110,350,80,20);
-    ellipse(190,350,80,20);
-    line(70,350,100,350);
-    line(200,350,230,350);
-    //HAND//
-    fill("pink")
-    stroke("black")
-    strokeWeight(1);
-    ellipse(105,270,20,100);
-    ellipse(195,270,20,100);
-    //EAR//
-    fill("pink")
-    stroke("black")
-    strokeWeight(1);
-    ellipse(105,130,20,100);
-    ellipse(195,130,20,100);
-    fill("white")
-    noStroke();
-    ellipse(105,140,10,85);
-    ellipse(195,140,10,85);
-    //BODY//
-    fill("pink")
-    stroke("black")
-    strokeWeight(1);
-    ellipse(150,270,90,170);
-    fill("white")
-    noStroke();
-    ellipse(150,280,70,115);
-    //FACE//
-    fill("pink")
-    stroke("black")
-    strokeWeight(1);
-    ellipse(150,180, 90,110);
-    //NOSE//
+    var cateary = 145;
+    var catx =470;
+    var cateyey = 195;
+    var catwhiskery = 215;
+    var fillthecat = color(217,217,217);
     
-    //EYE//
-    fill("black")
-    noStroke();
-    ellipse(135,170,20,30);
-    ellipse(160,170,20,30);
-    fill("white")
-    ellipse(135,165,5,10);
-    fill("white")
-    ellipse(160,165,5,10);
-    // END OF BUNNY //
     
+    var hi = color (0,0,0);
+    var bye = color (255, 255, 255);
+    var height = 100;
+    var width = 300;
+    var ellipseheight = 15;
+    var ellipsewidth = 10;
+
+    var bodyheight = 75;
+    var bodywidth = 115;
+    
+
     //DOG//
     //BODY//
-    fill("tan")
-    stroke("black")
+    fill(dogcolor)
+    stroke(hi)
     strokeWeight(3);
-    rect(270,170,115,75);
-    rect(270,245,115,75);
+    rect(dogx,170,bodywidth,bodyheight);
+    rect(dogx,245,bodywidth,bodyheight);
     //EYES//
     noStroke();
     fill(255,255,179)
     ellipse(355,195,30,35);
-    fill("black")
+    fill(hi)
     noStroke();
-    ellipse(300,195,10,15);
-    ellipse(350,195,10,15);
+    ellipse(300,dogeyey,ellipsewidth,ellipseheight);
+    ellipse(350,dogeyey,ellipsewidth,ellipseheight);
     //NOSE//
-    fill("black")
+    fill(hi)
     noStroke();
-    ellipse(325,220,20,15);
+    ellipse(325,220,20,ellipseheight);
     //EAR//
     textSize(50);
-	fill("black");
+	fill(hi);
     strokeWeight(0.5);
-    textFont("Chalkboard");
-	text(dogear,360,110, 300,100);
-    text(dogear2,280,110, 300,100)
+    textFont(boxtext);
+	text(dogear,360,dogeary,width,height);
+    text(dogear2,280,dogeary,width,height)
     //HAND//
     textSize(30);
     textFont("Helvetica");
-	text(doghand,365,250,300,100);
-    text(doghand,275,250,300,100);
+	text(doghand,365,doghandy,width,height);
+    text(doghand,275,doghandy,width,height);
     //FEET//
     textSize(25);
-	text(dogfeet,365,300,300,100);
-    text(dogfeet,285,300,300,100);
+	text(dogfeet,365,dogfeety,width,height);
+    text(dogfeet,285,dogfeety,width,height);
     //TAIL//
     textSize(30);
-    text(dogtail,385,280,300,100);
+    text(dogtail,385,280,width,height);
     // END OF DOG //
     
     // CAT //
     //TAIL//
     textSize(65);
-	fill(217,217,217);
-	stroke("black");
+	fill(fillthecat);
+	stroke(hi);
     strokeWeight(5);
 	textFont("Comic Sans MS");
-	text(cattail,580,245, 20, 100);
+	text(cattail,580,245, 20, height);
     //BODY//
-    fill(217,217,217)
-    stroke("black")
+    fill(fillthecat)
+    stroke(hi)
     strokeWeight(3);
-    rect(470,170,115,75);
-    rect(470,245,115,75);
+    rect(catx,170,bodywidth,bodyheight);
+    rect(catx,245,bodywidth,bodyheight);
     //EYE//
     fill(255,255,102);
     noStroke();
-    ellipse(550,195,10,15);
-    ellipse(500,195,10,15);
+    ellipse(550,cateyey,ellipsewidth,ellipseheight);
+    ellipse(500,cateyey,ellipsewidth,ellipseheight);
     //WHISKER//
     textSize(20);
-    fill("black");
+    fill(hi);
     textFont("Arial")
-    text(catwhisker,465,215,300,100);
-    text(catwhisker,580,215,300,100);
+    text(catwhisker,465,catwhiskery,width,height);
+    text(catwhisker,580,catwhiskery,width,height);
     //NOSE//
     fill("deeppink");
     noStroke();
@@ -150,105 +130,101 @@ function draw() {
     fill("darkturquoise");
     textSize(25);
     textFont("Gillsans");
-    text(catmouth,515,215,300,100);
+    text(catmouth,515,215,width,height);
     //HAND//
-    fill("black");
+    fill(hi);
     textFont("Arial")
-    text(cathand,475,255,300,100);
-    text(cathand,560,255,300,100);
+    text(cathand,475,cathandy,width,height);
+    text(cathand,560,cathandy,width,height);
     //FEET//
     textSize(25);
-	text(catfeet,545,300,300,100);
-    text(catfeet,495,300,300,100);
+	text(catfeet,545,catfeety,width,height);
+    text(catfeet,495,catfeety,width,height);
     //catear//
     textSize(45);
-    text(catear,560,145, 300,100);
-    text(catear,480,145, 300,100)
+    text(catear,560,cateary, width,height);
+    text(catear,480,cateary, width,height)
     // END OF CAT //
     
-
     
-    
-
-
     //NAME//
     textSize(65);
 	fill(148,0,211);
 	noStroke();
 	textFont("Comic Sans MS");
-	text(name,160,5, 20, 100);
+	text(name,160,5, 20,textheight);
 
     // PET SHOP //
 
     // P > Pet Shop
     noStroke();
     fill(6,106,241);
-    rect(530,390, 60, 55, 20);
+    rect(530,390,round, 55, 20);
     textSize(50);
-	fill("white");
+	fill(bye);
 	noStroke();
-	textFont("Chalkboard");
-	text(box1,545,390, 300, 100);
+	textFont(boxtext);
+	text(box1,545,390, width, textheight);
     // O > Pet Shop
     noStroke();
     fill("red");
-    rect(450,390, 60, 55, 20);
+    rect(450,390, round, 55, 20);
     // foot print 
-    fill("black");
+    fill(hi);
     noStroke();
-	ellipse(460,405,10,15);
-    ellipse(480,395,10,15);
-    ellipse(500,405,10,15);  
+	ellipse(460,dot,ellipsewidth,ellipseheight);
+    ellipse(480,395,ellipsewidth,ellipseheight);
+    ellipse(500,dot,ellipsewidth,ellipseheight);  
     textSize(50);
-	fill("black");
+	fill(hi);
 	noStroke();
-	textFont("Chalkboard");
-	text(box2,460,390, 300, 100);  
+	textFont(boxtext);
+	text(box2,460,390, width, textheight);  
     // H > Pet Shop
     noStroke();
     fill(106,205,69);
-    rect(370,390, 60, 55, 20);
+    rect(370,390, round, 55, 20);
     textSize(50);
-	fill("white");
+	fill(bye);
 	noStroke();
-	textFont("Chalkboard");
-	text(box3,385,390, 300, 100);
+	textFont(boxtext);
+	text(box3,385,390, width, textheight);
     // S > Pet Shop
     noStroke();
     fill(67,201,240);
-    rect(290,390, 60, 55, 20);
+    rect(290,390,round, 55, 20);
     textSize(50);
-	fill("white");
+	fill(bye);
 	noStroke();
-	textFont("Chalkboard");
-	text(box4,300,390, 300, 100);
+	textFont(boxtext);
+	text(box4,300,390, width, textheight);
     // T > Pet Shop
     noStroke();
     fill(174,83,255);
-    rect(210,390, 60, 55, 20);
+    rect(210,390,round, 55, 20);
     textSize(50);
-	fill("white");
+	fill(bye);
 	noStroke();
-	textFont("Chalkboard");
-	text(box5,225,390, 300, 100);
+	textFont(boxtext);
+	text(box5,225,390, width, textheight);
     // E > Pet Shop
     noStroke();
     fill(46,218,54);
-    rect(130,390, 60, 55, 20);
+    rect(130,390,round, 55, 20);
     textSize(50);
-    fill("white");
+    fill(bye);
     noStroke();
-    textFont("Chalkboard");
-    text(box6,145,390,300,100)
+    textFont(boxtext);
+    text(box6,145,390,width,textheight)
     // P > Pet Shop
     noStroke();
     fill("red");
-    rect(050,390, 60, 55, 20);
+    rect(050,390,round, 55, 20);
     textSize(50);
-    fill("white");
+    fill(bye);
     noStroke();
-    textFont("Chalkboard");
-    text(box7,60,390,300,100)
+    textFont(boxtext);
+    text(box7,60,390,width,textheight)
     // END OF PET SHOP //
 
     
