@@ -45,6 +45,14 @@ function draw() {
     var catwhiskery = 215;
     var fillthecat = color(217,217,217);
     
+    var pigeye = "U";
+    var pigtail = "@";
+    var pigfeet = "W";
+    var pighand = ">";
+    var pighand2 = "<";
+    var pigear = "v";
+  
+
     
     var hi = color (0,0,0);
     var bye = color (255, 255, 255);
@@ -143,8 +151,62 @@ function draw() {
     //catear//
     textSize(45);
     text(catear,560,cateary, width,height);
-    text(catear,480,cateary, width,height)
+    text(catear,480,cateary, width,height);
     // END OF CAT //
+    
+    //PIG//
+    //BODY//
+    fill("PINK")
+    stroke(hi)
+    strokeWeight(3);
+    rect(75,170,bodywidth,bodyheight);
+    rect(75,245,bodywidth,bodyheight);
+    //NOSE//
+    fill("deeppink")
+    ellipse(130,220,45,20);
+    fill(hi);
+    ellipse(125,220,3,10);
+    ellipse(135,220,3,10);
+    //EYE//
+    textSize(15);
+    noStroke();
+    textFont("Helvetica")
+    text(pigeye,95,195,115,75);
+    text(pigeye,155,195,115,75);
+    //TAIL//
+    textSize(20);
+    stroke(2);
+    fill("pink")
+    text(pigtail,54,290,115,75)
+    //FEET//
+    noStroke();
+    textSize(15);
+    fill("black")
+    text(pigfeet,95,305,115,75)
+    text(pigfeet,150,305,115,75)
+    //HAND//
+    textSize(25);
+    textFont("Helvetica");
+    text(pighand,95,260,width,height);
+	text(pighand2,150,260,width,height);
+    //EAR//
+    textSize(35);
+    text(pigear,85,160, width,height);
+    text(pigear,155,160, width,height);
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //END OG PIG//
     
     
     //NAME//
