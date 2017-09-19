@@ -14,6 +14,11 @@ function draw() {
     var box6 = "E";
     var box7 = "P";
     var round = 60;
+    var round1 = 55;
+    var round2 = 20;
+    var boxy = 390;
+    
+
     var textheight = 100;
     var boxtext = textFont ("Chalkboard");
     
@@ -42,27 +47,37 @@ function draw() {
     var cateary = 145;
     var catx =470;
     var cateyey = 195;
+    var cateyecolor = color (255,255,102);
     var catwhiskery = 215;
+    var cattalk = 560;
     var fillthecat = color(217,217,217);
     
+    var pigbodyx = "75";
     var pigeye = "U";
     var pigtail = "@";
     var pigfeet = "W";
     var pighand = ">";
     var pighand2 = "<";
     var pigear = "v";
-  
+    var colorpig = color ("pink");
+    var colorpignose = color ("deeppink");
+    var pigtextheight = 75;
+    var pigtextwidth = 115;
+    var pigtexty = 195;
+    var pignosey = 220;
 
-    
+  
     var hi = color (0,0,0);
     var bye = color (255, 255, 255);
     var height = 100;
     var width = 300;
     var ellipseheight = 15;
     var ellipsewidth = 10;
-
     var bodyheight = 75;
     var bodywidth = 115;
+    var apple = color ("red");
+    
+
     
 
     //DOG//
@@ -112,7 +127,7 @@ function draw() {
 	stroke(hi);
     strokeWeight(5);
 	textFont("Comic Sans MS");
-	text(cattail,580,245, 20, height);
+	text(cattail,580,245, 20,height);
     //BODY//
     fill(fillthecat)
     stroke(hi)
@@ -120,10 +135,14 @@ function draw() {
     rect(catx,170,bodywidth,bodyheight);
     rect(catx,245,bodywidth,bodyheight);
     //EYE//
-    fill(255,255,102);
+    fill(cateyecolor);
     noStroke();
     ellipse(550,cateyey,ellipsewidth,ellipseheight);
     ellipse(500,cateyey,ellipsewidth,ellipseheight);
+    fill(hi);
+    ellipse(550,cateyey,5,12);
+    fill("green");
+    ellipse(500,cateyey,5,12);
     //WHISKER//
     textSize(20);
     fill(hi);
@@ -131,7 +150,7 @@ function draw() {
     text(catwhisker,465,catwhiskery,width,height);
     text(catwhisker,580,catwhiskery,width,height);
     //NOSE//
-    fill("deeppink");
+    fill(colorpignose);
     noStroke();
     ellipse(525,210,20,15);
     //MOUTH//
@@ -143,47 +162,47 @@ function draw() {
     fill(hi);
     textFont("Arial")
     text(cathand,475,cathandy,width,height);
-    text(cathand,560,cathandy,width,height);
+    text(cathand,cattalk,cathandy,width,height);
     //FEET//
     textSize(25);
 	text(catfeet,545,catfeety,width,height);
     text(catfeet,495,catfeety,width,height);
     //catear//
     textSize(45);
-    text(catear,560,cateary, width,height);
+    text(catear,cattalk,cateary, width,height);
     text(catear,480,cateary, width,height);
     // END OF CAT //
     
     //PIG//
     //BODY//
-    fill("PINK")
+    fill(colorpig)
     stroke(hi)
     strokeWeight(3);
-    rect(75,170,bodywidth,bodyheight);
-    rect(75,245,bodywidth,bodyheight);
+    rect(pigbodyx,170,bodywidth,bodyheight);
+    rect(pigbodyx,245,bodywidth,bodyheight);
     //NOSE//
-    fill("deeppink")
-    ellipse(130,220,45,20);
+    fill(colorpignose)
+    ellipse(130,pignosey,45,20);
     fill(hi);
-    ellipse(125,220,3,10);
-    ellipse(135,220,3,10);
+    ellipse(125,pignosey,3,10);
+    ellipse(135,pignosey,3,10);
     //EYE//
     textSize(15);
     noStroke();
     textFont("Helvetica")
-    text(pigeye,95,195,115,75);
-    text(pigeye,155,195,115,75);
+    text(pigeye,95,pigtexty,pigtextwidth,pigtextheight);
+    text(pigeye,155,pigtexty,pigtextwidth,pigtextheight);
     //TAIL//
     textSize(20);
     stroke(2);
-    fill("pink")
-    text(pigtail,54,290,115,75)
+    fill(colorpig)
+    text(pigtail,54,290,pigtextwidth,pigtextheight)
     //FEET//
     noStroke();
     textSize(15);
-    fill("black")
-    text(pigfeet,95,305,115,75)
-    text(pigfeet,150,305,115,75)
+    fill(hi)
+    text(pigfeet,95,305,pigtextwidth,pigtextheight)
+    text(pigfeet,150,305,pigtextwidth,pigtextheight)
     //HAND//
     textSize(25);
     textFont("Helvetica");
@@ -193,19 +212,6 @@ function draw() {
     textSize(35);
     text(pigear,85,160, width,height);
     text(pigear,155,160, width,height);
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     //END OG PIG//
     
     
@@ -215,22 +221,22 @@ function draw() {
 	noStroke();
 	textFont("Comic Sans MS");
 	text(name,160,5, 20,textheight);
+    // END OF NAME //
 
     // PET SHOP //
-
     // P > Pet Shop
     noStroke();
     fill(6,106,241);
-    rect(530,390,round, 55, 20);
+    rect(530,boxy,round,round1,round2);
     textSize(50);
 	fill(bye);
 	noStroke();
 	textFont(boxtext);
-	text(box1,545,390, width, textheight);
+	text(box1,545,boxy,width,textheight);
     // O > Pet Shop
     noStroke();
-    fill("red");
-    rect(450,390, round, 55, 20);
+    fill(apple);
+    rect(450,boxy,round,round1,round2);
     // foot print 
     fill(hi);
     noStroke();
@@ -241,56 +247,54 @@ function draw() {
 	fill(hi);
 	noStroke();
 	textFont(boxtext);
-	text(box2,460,390, width, textheight);  
+	text(box2,460,boxy, width, textheight);  
     // H > Pet Shop
     noStroke();
     fill(106,205,69);
-    rect(370,390, round, 55, 20);
+    rect(370,boxy, round,round1,round2);
     textSize(50);
 	fill(bye);
 	noStroke();
 	textFont(boxtext);
-	text(box3,385,390, width, textheight);
+	text(box3,385,boxy, width, textheight);
     // S > Pet Shop
     noStroke();
     fill(67,201,240);
-    rect(290,390,round, 55, 20);
+    rect(290,boxy,round,round1,round2);
     textSize(50);
 	fill(bye);
 	noStroke();
 	textFont(boxtext);
-	text(box4,300,390, width, textheight);
+	text(box4,300,boxy, width, textheight);
     // T > Pet Shop
     noStroke();
     fill(174,83,255);
-    rect(210,390,round, 55, 20);
+    rect(210,boxy,round,round1,round2);
     textSize(50);
 	fill(bye);
 	noStroke();
 	textFont(boxtext);
-	text(box5,225,390, width, textheight);
+	text(box5,225,boxy, width, textheight);
     // E > Pet Shop
     noStroke();
     fill(46,218,54);
-    rect(130,390,round, 55, 20);
+    rect(130,boxy,round,round1,round2);
     textSize(50);
     fill(bye);
     noStroke();
     textFont(boxtext);
-    text(box6,145,390,width,textheight)
+    text(box6,145,boxy,width,textheight)
     // P > Pet Shop
     noStroke();
-    fill("red");
-    rect(050,390,round, 55, 20);
+    fill(apple);
+    rect(050,boxy,round,round1,round2);
     textSize(50);
     fill(bye);
     noStroke();
     textFont(boxtext);
-    text(box7,60,390,width,textheight)
+    text(box7,60,boxy,width,textheight)
     // END OF PET SHOP //
-
-    
-    
+ 
     // BORDERS //
     noFill();
     stroke("dodgerblue");
