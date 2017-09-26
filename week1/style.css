@@ -1,0 +1,37 @@
+/* css */
+
+/* global styles*/
+ul {
+	padding:0;
+}
+.link {
+	font-size: 2em;
+	padding: 0.25em 0;
+	margin-right: 0.5em;
+	display:inline;
+}
+h1{text-align: center;border: 3px solid:black
+}
+a {
+	color: red;
+}
+a:hover {
+	color: deeppink;
+}
+li a {
+	color: steelblue;
+	transition: color 500ms;
+}
+
+img {
+	width: 100%;
+	transition: width 1s;
+}
+
+/* home page */
+#bar {
+	background-color:aliceblue;
+	font-family: sans-serif;
+}
+
+
