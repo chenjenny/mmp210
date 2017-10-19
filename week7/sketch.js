@@ -64,8 +64,8 @@ function setup() {
 		}
     }
 
-    //windows 
-    
+    //windows
+        
     
     //outside
     noStroke();
