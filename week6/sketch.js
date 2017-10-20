@@ -3,7 +3,6 @@ var speed;
 
 function setup() { 
 	createCanvas(640, 440);
-
 }
 function draw() {
     	if (mouseIsPressed) {

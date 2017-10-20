@@ -15,6 +15,19 @@ function setup() {
 //    var windowh = 90;
 //    var windowl = 60;
 //    var window2y = 130;
+    
+       //brick space
+    var brickspaceX = 30;
+    for (let x =0; x < width; x+= brickspaceX){
+            strokeWeight(1);
+            line( x , 0, x, height );   
+    }
+    var brickspaceY = 10;
+    for (let y = 0; y < height; y += brickspaceY) {
+            strokeWeight(2);
+            line( 0 , y,  width, y );  
+    } 
+    
 
     var column = width/4;
     var row = height/3;
@@ -22,7 +35,7 @@ function setup() {
     //brick building
 	rectMode(CENTER);
 	for (var x = 150; x <= width; x += column) {
-		line(x, 0, x, height);
+//		line(x, 0, x, height);
 		for (var y = 50; y <= height; y += row) {
             
             // bricks
@@ -63,6 +76,7 @@ function setup() {
             
 		}
     }
+  
 
     //windows
         

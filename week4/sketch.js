@@ -12,8 +12,12 @@ var text2 = "some"
 var text3 = "crazy"
 var text4 = "hair"
 
-
 function draw() {
+    
+    //face2
+    stroke("MidnightBlue");
+	fill("yellow");
+	ellipse(width/2, height/2, frameCount, frameCount);
     
    //text// 
     textSize(30);
@@ -40,11 +44,6 @@ function draw() {
 	textFont("Comic Sans MS");
 	text(text4, 260, 10, 20, 200);
 
-//mouse//
-    strokeWeight(6);
-	stroke("red");
-	fill("red");
-	line(mouseX, mouseY, pmouseX, pmouseY)
 //face
     //strokeWeight(2);
 	//stroke(84,153,199);
@@ -52,7 +51,15 @@ function draw() {
     //fill(245,251,112);
 	//ellipse(width/2, height/2, width - mouseX);
     
+    //mouse//
+    strokeWeight(6);
+	stroke("red");
+	fill("red");
+	line(mouseX, mouseY, pmouseX, pmouseY) 
+
+    
 //face2
+    strokeWeight(2);
     stroke("MidnightBlue");
 	fill("yellow");
 	ellipse(width/2, height/2, frameCount, frameCount);
@@ -73,7 +80,7 @@ function draw() {
     noStroke();
     fill("red");
     ellipse(300,350,200,50);
-
+    
 //moving ellipse
     fill(241,243,200);
     ellipse(circleX,150,20,20);
