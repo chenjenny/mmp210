@@ -88,7 +88,6 @@ function mouseClicked() {
             arc(x, y, 20, 20, 0,PI, CHORD);
             
             } else {
-            /// emoji eye///
             stroke("grey");
             strokeWeight(2);
             fill("GhostWhite");
