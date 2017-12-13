@@ -155,7 +155,8 @@ function setup() {
 		// Left eye
 		drawEye(width / 2 - 100, height / 2 - 50, 125, 50);
 		// Mouth
-		line(width / 2 + 100, height / 2 + 100, 500, 500);
+		line(face.x  + 100, face.y  + 100, 500, 500);
+//		line(width / 2 + 100, height / 2 + 100, 500, 500);
 
 	}
 }
