@@ -197,7 +197,7 @@ function mousePressed() {
 
 		fill("black");
 		strokeWeight();
-		//		textFont("gillSans");
+		textFont("chalkboard");
 		textSize(150);
 		text("X", width / 2 + 60, height / 2 + 5);
 		text("X", width / 2 - 150, height / 2 + 5);
