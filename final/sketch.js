@@ -156,13 +156,13 @@ function setup() {
 		drawEye(width / 2 - 100, height / 2 - 50, 125, 50);
 		// Mouth
 		strokeWeight(5);
-//		fill('green');
-//		ellipse(face.x - 100, face.y + 150, 20);
-//		fill('red');
-//		ellipse(face.x + 100, face.y + 90, 20);
+		//		fill('green');
+		//		ellipse(face.x - 100, face.y + 150, 20);
+		//		fill('red');
+		//		ellipse(face.x + 100, face.y + 90, 20);
 		line(face.x - 100, face.y + 150, face.x + 100, face.y + 90);
 
-	
+
 	}
 }
 
@@ -197,7 +197,7 @@ function mousePressed() {
 
 		fill("black");
 		strokeWeight();
-		textFont("chalkboard");
+		//		textFont();
 		textSize(150);
 		text("X", width / 2 + 60, height / 2 + 5);
 		text("X", width / 2 - 150, height / 2 + 5);
