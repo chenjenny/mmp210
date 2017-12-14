@@ -1,32 +1,43 @@
-    body{ 
-    background-color:black;
+canvas {
+	display: block;
+	margin: 0 auto;
 }
 
-    h1,h2{color:#00BFFF;
-            text-align: center;
-            font-size: 50px; 
-            font-family:'Nixie One', cursive;
-}
-    h4{color:white;
-            text-align: center;
-            font-size: 45px; 
-            font-family:'Nixie One', cursive;
-}
-    
-    h4{color:white;
-            text-align: center;
-            font-size: 45px; 
-            font-family:'Nixie One', cursive;
-}
-        p{color:deeppink;
-            text-align: center;
-            font-size: 20px; 
-            font-family:'Nixie One', cursive;
-}
-     
-    a{color:#ADD8E6;
-            font-size: 20px; 
-            font-family:'Nixie One', cursive;
+body {
+	background-color: black;
 }
 
+h1,
+h2 {
+	color: #00BFFF;
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Nixie One', cursive;
+}
 
+h4 {
+	color: white;
+	text-align: center;
+	font-size: 45px;
+	font-family: 'Nixie One', cursive;
+}
+
+h4 {
+	color: white;
+	text-align: center;
+	font-size: 45px;
+	font-family: 'Nixie One', cursive;
+}
+
+p {
+	color: deeppink;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Nixie One', cursive;
+}
+
+a {
+	color: #ADD8E6;
+	font-size: 20px;
+	font-family: 'Nixie One', cursive;
+}

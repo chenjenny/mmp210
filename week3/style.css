@@ -1,7 +1,12 @@
-body{ 
-    background-color: snow;
+canvas {
+	display: block;
+	margin: 0 auto;
 }
 
-h1 { text-align: center ;
-font-family: avenir ;
-    
+body {
+	background-color: snow;
+}
+
+h1 {
+	text-align: center;
+	font-family: avenir;
