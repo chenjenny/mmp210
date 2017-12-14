@@ -156,10 +156,13 @@ function setup() {
 		drawEye(width / 2 - 100, height / 2 - 50, 125, 50);
 		// Mouth
 		strokeWeight(5);
-		line(face.x + 100, 500, face.w, 500);
-		//		line(face.x / 2, face.y / 2 , 500, 500);
-		//		line(width / 2 + 100, height / 2 + 100, 500, 500);
+//		fill('green');
+//		ellipse(face.x - 100, face.y + 150, 20);
+//		fill('red');
+//		ellipse(face.x + 100, face.y + 90, 20);
+		line(face.x - 100, face.y + 150, face.x + 100, face.y + 90);
 
+	
 	}
 }
 
@@ -189,8 +192,8 @@ function mousePressed() {
 		//		rotate(PI/3.0);
 		noStroke();
 		ellipse(face.x, face.y, face.w);
-		//		rect(width / 2, height / 2, 345, 380, 25);
-		//		arc(width / 2, height / 2 + 50, 350, 350, 0, PI, CHORD);
+		//				rect(width / 2, height / 2, 345, 380, 25);
+		//				arc(width / 2, height / 2 + 50, 350, 350, 0, PI, CHORD);
 
 		fill("black");
 		strokeWeight();
